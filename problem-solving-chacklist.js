@@ -75,12 +75,11 @@ console.log(myBestFriend); */
 
 function onlyPositive(num){
     let positiveNumber = [];
-    for (let i = 0; i < num.length; i++){
-        var number = num[i];
-        if (number >= 0){
-            positiveNumber = number;
+    for (const number of num){
+        if (number > -1){
+            positiveNumber.push(number);
         }
-        else if(number < 0){
+        else if (number < 0){
             break;
         }
     }
